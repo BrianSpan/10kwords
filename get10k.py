@@ -44,7 +44,7 @@ def badword(word:str)->bool:
 ################
 
 
-print("Getting the most common 10 thousand words from Wikitionary")
+print("Attempting to get the most common 10 thousand words from Wikitionary")
 
 wordlist: list[str] =[]
 
@@ -71,7 +71,7 @@ else:
         print('Getting '+str(1+(kiloword)*1000)+'-'+str((kiloword+1)*1000)+' most common words')
         # 'most common' in this case is most common used in Wikipedia
 
-    print(f"Retrieved {int(len(wordlist))} total words")
+    print(f"\nRetrieved {int(len(wordlist))} total words:")
     print (wordlist)
     # This page has repeats, phrases, and proper names
     # So we dont have exactly 10000
